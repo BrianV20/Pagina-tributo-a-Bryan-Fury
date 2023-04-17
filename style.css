@@ -1,0 +1,451 @@
+/*/Fuentes
+titulo: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+subtitulo: Verdana, Geneva, Tahoma, sans-serif;
+parrafo: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+/*ELEMENTOS BASICOS*/
+p,
+li {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li a {
+  text-decoration: none;
+}
+
+h2 {
+  color: white;
+  border: 4px solid white;
+  width: fit-content;
+  padding: 1rem 3rem;
+  background-color: #e63946;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+
+body {
+  padding-top: 80px;
+  background-color: #14181f;
+  /* background-image: linear-gradient(#14181f, #023e8a); */
+}
+
+svg {
+  transition: all 0.3s;
+}
+
+svg:hover {
+  transform: scale(1.3);
+}
+
+/*NAVBAR*/
+.navbar {
+  /* background-image: linear-gradient(to right, #9fccfa, #0974f1); */
+  background-color: #282a35;
+}
+
+.tituloCelular {
+  display: none;
+}
+
+.titulo {
+  font-size: 2.7rem;
+}
+
+.navContenidoDiv {
+  width: 100%;
+  display: flex;
+}
+
+.navContenidoDiv ul li a {
+  color: #fff;
+  font-weight: 700;
+  background-color: #6971c9;
+  border-radius: 0.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: all 0.3s;
+}
+
+.navContenidoDiv ul li a:hover {
+  transform: scale(1.1);
+}
+
+.navContenidoDiv ul li:nth-child(1):hover {
+  transform: translateX(20px);
+}
+
+.navContenidoDiv ul li a:nth-child(1):hover {
+  color: #fff;
+}
+
+.navContenidoDiv ul li:nth-child(1) {
+  /* margin-right: 4rem; */
+  margin: 1rem 3rem 0rem 1rem;
+  transition: all 0.3s;
+}
+
+.navContenidoDiv ul li:nth-child(1) a {
+  background-color: #60337e;
+}
+
+.navContenidoDiv ul li:nth-child(n + 2) {
+  margin-left: 1.4rem;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+/*OVERVIEW AND PIC*/
+.overviewAndPic {
+  /* border: 2px solid red; */
+  margin: 5rem auto 8rem auto;
+  width: 90%;
+  display: flex;
+}
+
+.overview {
+  width: 70%;
+  padding-right: 30rem;
+}
+
+.overview > h2 {
+  margin: 0.5rem 2rem;
+}
+
+.overview > p {
+  margin: 0.5rem 2rem;
+  line-height: 2.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.picDiv p {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.bryanPic {
+  transition: all 0.3s;
+}
+
+.bryanPic:hover {
+  transform: translateX(-25px);
+  box-shadow: 10px 10px #fff;
+}
+
+/*APARIENCIA*/
+.aparienciaSection,
+.personalidadSection {
+  width: 90%;
+  margin: 1rem auto 8rem auto;
+  /* border: 2px solid pink; */
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.aparienciaDiv,
+.personalidadDiv {
+  width: 50%;
+  /* border: 10px solid green; */
+  padding-left: -10rem;
+}
+
+.aparienciaDiv > h2 {
+  margin: 0.5rem 2rem 0.5rem 31rem;
+}
+
+#aparienciaPic,
+#personalidadPic {
+  width: 80%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.aparienciaPicDiv,
+.personalidadPicDiv {
+  margin: 10px auto;
+}
+
+#aparienciaPic,
+#personalidadPic {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+#aparienciaPic {
+  width: 60%;
+}
+
+.aparienciaPicDiv p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.aparienciaPicDiv p {
+  font-size: 1.8rem;
+}
+
+/*PERSONALIDAD*/
+.personalidadDiv > h2 {
+  margin: 0.5rem 2rem 0.5rem 31rem;
+}
+
+.personalidadPicDiv p {
+  font-size: 1.8rem;
+  margin-top: -0.5rem;
+  text-align: center;
+}
+
+/*APARICIONES Y LORE*/
+.aparicionesYLoreDiv {
+  width: 90%;
+  margin: 20px auto;
+  /* border: 2px solid royalblue; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aparicionesDiv {
+  /* border: 6px solid salmon; */
+  width: 40%;
+}
+
+.aparicionesDiv h2 {
+  font-size: 1.8rem;
+  margin: 1.5rem 0 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.aparicionesDiv ol li {
+  margin-left: 2rem;
+  line-height: 5rem;
+}
+
+.loreDiv {
+  /* border: 6px solid yellow; */
+  width: 40%;
+}
+
+.loreDiv h2 {
+  font-size: 1.8rem;
+  margin: 1.5rem 0 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.loreDiv p {
+  font-size: 1.7rem;
+}
+
+/*GALERIA*/
+.galeria {
+  width: 90%;
+  margin: 8rem auto 8rem auto;
+}
+
+.divGaleria h2 {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.cartasApariencia {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: inline-block;
+}
+
+.cartasApariencia div {
+  transition: all 0.3s;
+}
+
+.cartasApariencia div:hover {
+  transform: scale(1.05);
+}
+
+/*VIDEOS*/
+.videos {
+  width: 90%;
+  margin: 10rem auto 9rem auto;
+}
+
+.divVideos h2 {
+  margin: 2rem auto 2.5rem auto;
+}
+
+.cartasVideos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cartasVideos .card {
+  transition: all 0.3s;
+}
+
+.cartasVideos .card:hover {
+  transform: scale(1.1);
+}
+
+/*BIBLIOGRAFIA*/
+.bibliografia {
+  width: 90%;
+  margin: 1rem auto 6rem auto;
+}
+
+.divBibliografia h2 {
+  margin: 2rem auto 1.5rem auto;
+}
+
+.divBibliografia ul {
+  width: 50%;
+  margin: 1rem 4rem;
+}
+
+/*FOOTER*/
+.copyright {
+  background-color: #1d2330;
+}
+
+.bi {
+  margin: 1rem 3rem 0 3rem;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+  body {
+    padding-top: 0px;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  h2 {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+  .tituloCelular {
+    display: block;
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 30px 20px 40px 10px;
+    padding: 2rem 3rem;
+    width: 80%;
+    margin: 2rem auto 1rem auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: #6971c9;
+    transition: all 0.3s;
+  }
+
+  .overviewAndPic {
+    flex-direction: column;
+    /* display: inline-block; */
+  }
+  .overview {
+    width: fit-content;
+    padding: 0;
+  }
+  .overview > h2 {
+    margin: 10px auto;
+  }
+  .bryanPic {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .picDiv p {
+    font-size: 1.3rem;
+  }
+
+  .aparienciaSection,
+  .personalidadSection {
+    flex-direction: column;
+  }
+  .aparienciaDiv,
+  .personalidadDiv {
+    width: fit-content;
+    padding: 1rem;
+  }
+  .aparienciaDiv > h2,
+  .personalidadDiv > h2 {
+    /* width: fit-content; */
+    /* margin: 0 0 2rem 5rem; */
+    margin: 10px auto;
+  }
+
+  .aparicionesYLoreDiv {
+    flex-direction: column;
+  }
+  .aparicionesDiv,
+  .loreDiv {
+    width: fit-content;
+    margin: 10px auto;
+    padding: 0 1rem 0 1rem;
+  }
+  .aparicionesDiv ol li {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .loreDiv p {
+    font-size: 1.3rem;
+  }
+
+  .galeria {
+    margin: 5rem auto 0 auto;
+    /* gap: 1rem; */
+    justify-content: space-between;
+  }
+  .cartasApariencia .card {
+    width: 40% !important;
+    padding: 0 0rem 0 0;
+  }
+  .cartasApariencia .card p {
+    font-size: 1.3rem;
+  }
+
+  .videos {
+    margin: 7rem auto 0 auto;
+  }
+  .cartasVideos {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .cartasVideos .card {
+    width: 60% !important;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .cartasVideos .card iframe {
+    width: 100% !important;
+    height: 60%;
+  }
+
+  .bibliografia {
+    margin: 7rem auto 2rem auto;
+    width: fit-content;
+  }
+  .divBibliografia ul {
+    width: 100%;
+  }
+  .divBibliografia li a {
+    font-size: 1.3rem;
+    line-height: 1rem;
+  }
+}
